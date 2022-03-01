@@ -1,0 +1,9 @@
+{
+    "id_usuario": 1,
+    "nombre": "Diego David",
+    "apellido": "Oña Gualotuña",
+    "correo": "diego@gmail.com",
+    "nombre_usuario": "ddona",
+    "password": "1234",
+    "estado": 1
+}

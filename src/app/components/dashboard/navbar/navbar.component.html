@@ -1,0 +1,44 @@
+<!-- <mat-toolbar color="primary">
+  <span>My Application</span>
+  <span class="example-spacer"></span>
+  <button *ngFor="let item of menus" [routerLink]="item.redirect" mat-stroked-button color="Primary"
+    routerLinkActive="router-link-active">{{ item.nombre }}</button>
+
+  <div class="dropdown">
+    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+      <li><button class="dropdown-item" type="button">Action</button></li>
+      <li><button class="dropdown-item" type="button">Another action</button></li>
+      <li><button class="dropdown-item" type="button">Something else here</button></li>
+    </ul>
+  </div>
+
+  <span class="example-spacer"></span>
+  <button [routerLink]="['/login']" routerLinkActive="router-link-active" mat-icon-button class="example-icon"
+    aria-label="Example icon-button with menu icon">
+    <mat-icon>logout</mat-icon>
+  </button>
+</mat-toolbar> -->
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/dashboard/inicio']">Inicio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Usuarios</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" [routerLink]="['/dashboard/usuarios']" routerLinkActive="router-link-active" >Administración usuarios</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/dashboard/reportes']" routerLinkActive="router-link-active" >Reporte usuarios</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex" >
+        <button [routerLink]="['/login']" class="btn btn-sm btn-outline-secondary"><span class="material-icons">logout</span></button>
+      </div>
+    </div>
+  </div>
+</nav>

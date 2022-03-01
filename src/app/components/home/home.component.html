@@ -1,0 +1,27 @@
+<div *ngIf="usuarios.length > 0">
+    <table class="table table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Correo</th>
+                <th scope="col">Celular</th>
+                <th scope="col">Password</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody> 
+            <tr *ngFor="let u of usuarios; let i = index">
+                <td scope="row">{{i + 1}}</td>
+                <td scope="row">{{u.name}} {{u.lastName}}</td>
+                <td scope="row">{{u.email}}</td>
+                <td scope="row">{{u.phone}}</td>
+                <td scope="row">{{u.password}}</td>
+                <td>
+                    <!-- <button class="btn btn-outline-danger btn-sm" (click)="eliminarUsuario()"><i class="fa fa-trash"></i></button> -->
+                    <button class="btn btn-outline-danger btn-sm" mat-button (click)="eliminarUsuario(u.id)"><i class="fa fa-trash"></i></button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

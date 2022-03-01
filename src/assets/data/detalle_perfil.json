@@ -1,0 +1,64 @@
+{
+    "detalle_perfil": [
+        {
+            "id_detalle_perfil": 2,
+            "perfiles": {
+                "id_perfiles": 4,
+                "nombre": "Supervisor talento",
+                "estado": 1,
+                "detalle_modulo": [
+                    {
+                        "id_detalle_modulo": 1,
+                        "modulo": {
+                            "id_modulo": 1,
+                            "nombre": "Usuarios",
+                            "detalle_menu": [
+                                {
+                                    "id_detalle_menu": 1,
+                                    "menu": {
+                                        "id_menu": 1,
+                                        "descripcion": "Administración de Usuarios",
+                                        "path": "/dashboard/usuarios"
+                                    }
+                                },
+                                {
+                                    "id_detalle_menu": 2,
+                                    "menu": {
+                                        "id_menu": 2,
+                                        "descripcion": "Reporte de usuarios",
+                                        "path": "/dashboard/reportes"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "id_detalle_modulo": 2,
+                        "modulo": {
+                            "id_modulo": 2,
+                            "nombre": "Ventas",
+                            "detalle_menu": [
+                                {
+                                    "id_detalle_menu": 3,
+                                    "menu": {
+                                        "id_menu": 3,
+                                        "descripcion": "Administración de ventas",
+                                        "path": "/dashboard/ventas"
+                                    }
+                                },
+                                {
+                                    "id_detalle_menu": 4,
+                                    "menu": {
+                                        "id_menu": 4,
+                                        "descripcion": "Reporte de ventas",
+                                        "path": "/dashboard/reportes-ventas"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
